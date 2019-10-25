@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
   root "grams#index"
-end
+  resources :grams, only: [:new, :create]
+  end
