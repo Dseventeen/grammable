@@ -2,7 +2,7 @@
 
 <% @gram.each do |gram| %>
 <div>
-  <%= image_tag gram.picture %>
+  <%= image_tag gram.picture.to_s %>
   <%= gram.message %>
 </div>
 <% end %>
